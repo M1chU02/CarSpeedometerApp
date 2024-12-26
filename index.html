@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sports Car Speedometer</title>
+    <script src="https://cdn.jsdelivr.net/npm/gaugeJS@1.3.7/dist/gauge.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <canvas id="speedometer"></canvas>
+      <div id="throttle-control">
+        <label for="throttle">Throttle:</label>
+        <input type="range" id="throttle" min="0" max="100" value="0" />
+        <div class="speed">Speed: <span id="speed-display">0</span> km/h</div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

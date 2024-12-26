@@ -1,0 +1,73 @@
+/* General body styling */
+body {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background: #1a1a1a;
+  color: #ffffff;
+}
+
+/* Main container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Throttle input styling */
+#throttle-control {
+  margin-top: 30px;
+}
+
+label {
+  font-size: 1.2rem;
+  color: #00ffcc; /* Vibrant throttle label color */
+}
+
+#throttle {
+  width: 300px;
+  margin: 10px auto;
+  appearance: none;
+  background: linear-gradient(to right, #00ff00, #ffff00, #ff0000);
+  height: 12px;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  border: 2px solid #ffffff;
+}
+
+#throttle::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+}
+
+#throttle::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 50%;
+  border: 2px solid #ff0000;
+  cursor: pointer;
+}
+
+/* Speed display styling */
+.speed {
+  font-size: 1.5rem;
+  margin-top: 15px;
+  color: #ffcc00; /* Yellow display */
+  font-weight: bold;
+}
+
+/* Canvas */
+canvas {
+  box-shadow: 0px 0px 20px #ff0000;
+  border-radius: 50%;
+}
